@@ -11,7 +11,8 @@ The first policy in Jamf Pro is called "Install Admin Privileges App". This will
 - Install the Privileges app and place the launch agents and scripts on the end user's Mac
 - Call the policy "Grant Temp Admin Access"
 
-The seoncd policy in Jamf Pro is called "Grant Temp Admin Access". It runs the script "GrantTempAdminAccess.sh". This script does the following:
+The seoncd policy in Jamf Pro is called "Grant Temp Admin Access", which runs the script "GrantTempAdminAccess.sh".
+This script will do the following:
  - Determine the current local user
  - Copy the grantAdminAccess and loginRemoveAdminAccess launch agents to ~/Library/LaunchAgents/
  - Load the grantAdminAccess launch agent to the system
