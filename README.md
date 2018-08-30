@@ -49,10 +49,10 @@ You will need to create a custom PKG, which will place these files into the foll
 
 Jamf Pro Workflow
 Script:
-- enter the GrantTempAdminAccess script into Jamf Pro
+- Copy the GrantTempAdminAccess script into Jamf Pro
 
 Smart Computer Group:
-- create a smart computer group that checks to see if the "Privileges.app" is installed
+- Create a smart computer group that checks to see if the "Privileges.app" is installed
 
 There are two policies you need to configure in Jamf Pro
 
@@ -69,5 +69,3 @@ Second policy, "Grant Temp Admin Access":
 - Under the "Scripts" payload, select the GrantTempAdminAccess script and set the priority to after
 - Scope this policy to the smart group you created earlier (the one that looks for the Privileges.app)
 - Make the policy available in Self Service
-
-
