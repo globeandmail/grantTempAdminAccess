@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.globeandmail.removeAdminAccess</string>
+	<key>Program</key>
+	<string>/usr/local/.Privileges/Scripts/.RemoveAdminAccess.command</string>
+	<key>StartInterval</key>
+	<integer>600</integer>
+	<key>LaunchOnlyOnce</key>
+	<true/>
+</dict>
+</plist>
