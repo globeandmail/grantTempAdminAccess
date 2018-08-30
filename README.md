@@ -38,7 +38,7 @@ If the user tries logging out / rebotting their system while they have admin acc
 
 Creating your AdminPrivileges.pkg
 (I like to use Packages by WhiteBox: http://s.sudre.free.fr/Software/Packages/about.html)
-You will need to create a custom PKG, which will place the files into the following directories:
+You will need to create a custom PKG, which will place these files into the following directories:
 - /Applications/Utilities/Privileges.app
 - /Usr/Local/.Privileges/Agents/.com.globeandmail.grantAdminAccess.plist
 - /Usr/Local/.Privileges/Agents/.com.globeandmail.loginRemoveAdminAccess.plist
