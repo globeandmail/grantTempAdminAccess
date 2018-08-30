@@ -46,6 +46,7 @@ You will need to create a custom PKG, which will place these files into the foll
 - /Usr/Local/.Privileges/Scripts/.GrantAdminAccess.command
 - /Usr/Local/.Privileges/Scripts/.RemoveAdminAccess.command
 - /Usr/Local/.Privileges/Scripts/.removeLoginAdminAccess.command
+You will also want to have your PKG run the privilegesPostInstall.sh script
 
 Jamf Pro Workflow
 Script:
