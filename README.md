@@ -3,7 +3,9 @@ Leveraging rtrouton's Privileges app, this Jamf Self Service workflow will give 
 
 Currently the time limit is set to 10 minutes. Admin access will be removed when either the time expires, or if the user logs out/reboots.
 
-There are four scripts, and 3 launch agents required, along with rtrouton's Privileges app: https://github.com/SAP/macOS-enterprise-privileges. There are also two policies that need to be configured in Jamf Pro, and a custom PKG that needs to be created.
+There are four scripts, and 3 launch agents required, along with rtrouton's Privileges app:
+https://github.com/SAP/macOS-enterprise-privileges
+There are also two policies that need to be configured in Jamf Pro, and a custom PKG that needs to be created.
 
 The first policy in Jamf Pro is called "Install Admin Privileges App". This will do the following:
 - Install the Privileges app and place the launch agents and scripts on the end user's Mac
