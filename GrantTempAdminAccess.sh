@@ -1,10 +1,11 @@
 #!/bin/bash
 
 ####
-# Copies grantAdminAccess.plist and removeAdminAccess.plist files to
-# ~/Library/Launchagents/, and then loads the grantAdminAcess.plist into the system
+# Creates the directory ~/Library/LaunchAgents, copies the grantAdminAccess.plist
+# and removeAdminAccess.plist files to that directory, and then loads the
+# grantAdminAcess.plist into the system
 ####
-# version 1.2
+# version 1.3
 # Created by Nathan Beranger, August 2018
 ####
 
@@ -16,6 +17,10 @@ currentuser=$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStore
 
 ## Variable for storing current user's UID
 currentUID=$(id -u "$currentuser")
+
+## Ensure that ~/Library/LaunchAgents/ directory exists, and that the current user owns it
+mkdir -p /Users/"$currentuser"/Library/LaunchAgents
+chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/
 
 ## Copy plist files to the ~/Library/LaunchAgents/ folder, ensure current user is owner, and that permissions are rw-r-r
 cp /usr/local/.Privileges/Agents/.com.globeandmail.grantAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
