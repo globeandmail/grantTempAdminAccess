@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ####
-# Creates the directory ~/Library/LaunchAgents, copies the grantAdminAccess.plist
-# and removeAdminAccess.plist files to that directory, and then loads the
-# grantAdminAcess.plist into the system
+# Create the directory ~/Library/LaunchAgents, copy the grantAdminAccess.plist and
+# removeAdminAccess.plist files to that directory, then load the grantAdminAcess.plist
+# into the system
 ####
 # version 1.3
 # Created by Nathan Beranger, August 2018
