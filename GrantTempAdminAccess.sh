@@ -21,7 +21,6 @@ currentUID=$(id -u "$currentuser")
 ## Ensure that ~/Library/LaunchAgents/ directory exists, and that the current user owns it
 mkdir -p /Users/"$currentuser"/Library/LaunchAgents
 chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/
-chmod 644 /Users/"$currentuser"/Library/LaunchAgents/
 
 ## Copy plist files to the ~/Library/LaunchAgents/ folder, ensure current user is owner, and that permissions are rw-r-r
 cp /usr/local/.Privileges/Agents/.com.globeandmail.grantAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
