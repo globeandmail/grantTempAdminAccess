@@ -29,7 +29,7 @@ chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdmin
 
 cp /usr/local/.Privileges/Agents/.com.globeandmail.loginRemoveAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plist
 chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plist
-chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plis
+chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plist
 
 echo "pausing for 2 seconds to ensure files have copied over"
 
